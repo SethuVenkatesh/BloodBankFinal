@@ -1,0 +1,82 @@
+.staff-login-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.6);
+
+}
+.staff-login-form{
+    padding: 40px;
+    z-index:2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 500px;
+    background-color: lightgray;
+    
+    border-radius: 10px;
+
+}
+.staff-login-form h3{
+    margin: auto;
+    font-weight: bold;  
+    font-size: 26px;  
+}
+.staff-login-form .input-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding:10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    
+}
+
+.staff-login-form .input-container input{
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border:none;
+    background-color: transparent;
+
+}
+.staff-login-form .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.staff-login-form .checkbox-container{
+    display: flex;
+    gap: 10px;
+}
+.staff-login-form .redirect-container p{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.submit-btn{
+    background-color: blue;
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+@media only screen and (max-width:767px)
+{
+    .staff-login-form{
+        min-width: 300px;
+    }
+    .staff-signup-form .container{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .staff-signup-form .redirect-container{
+        margin: auto;
+    }
+}

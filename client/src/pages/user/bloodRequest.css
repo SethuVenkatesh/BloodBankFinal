@@ -1,0 +1,107 @@
+.requestContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    min-height: 100vh;
+
+}
+.requestContainer .title{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+.requestWrapper{
+    margin-top: 50px;
+    max-width: 500px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.requestWrapper h4{
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px red;
+    -webkit-text-stroke: 1px red;
+    -webkit-text-fill-color: white;
+}
+.requestWrapper .textContainer{
+    width: 100%;
+    border: 1px solid lightgray;
+    position: relative;
+    border-radius:5px;
+}
+.requestWrapper .textContainer input{
+    border:none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    z-index:10;
+}
+.requestWrapper .textContainer label{
+    position: absolute;
+    top:10px;
+    left:10px;
+    transition:all 0.2s ease;
+    background-color: whitesmoke;
+    padding: 0 2px;
+    pointer-events: none;
+}
+.requestWrapper .textContainer input:focus + label{
+    top:-10px;
+    left:-5px;
+    transform: scale(0.8);
+}
+.requestWrapper input:-webkit-autofill,
+.requestWrapper input:-webkit-autofill:hover, 
+.requestWrapper input:-webkit-autofill:focus, 
+.requestWrapper input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.requestWrapper .textContainer input:-webkit-autofill:is(:hover,:focus){
+    outline: none;
+}
+.requestWrapper .textContainer input:valid + label{
+    top:-10px;
+    left:-5px;
+    transform: scale(0.8);
+}
+.requestWrapper .categoryContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+}
+.requestWrapper .categoryContainer .selectContainer{
+    padding:0 10px;
+}
+.requestWrapper .categoryContainer .selectContainer select{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.requestWrapper button{
+    width: 50%;
+    border:none;
+    color:white;
+    background-color: blue;
+    padding:10px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.requestContainer .bloodContainer{
+    width: 50%;
+}

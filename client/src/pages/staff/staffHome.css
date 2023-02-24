@@ -1,0 +1,106 @@
+.staffHomeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.staffHomeWrapper{
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 20px;
+}
+.staffHomeWrapper .staffButtonContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.staffHomeWrapper .staffButtonContainer .staffButton{
+    padding: 20px 10px;
+    min-width: 25vw;
+    margin: 10px;
+    text-align: center;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    background-color: coral;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid gray;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+}
+.staffHomeWrapper .staffButtonContainer .staffButton:nth-child(2){
+    background-color: #107ecb;
+}
+.staffHomeWrapper .staffButtonContainer .staffButton:hover{
+    transform: scale(1.2);
+}
+.staffHomeWrapper .staffButtonContainer .staffButton .MuiSvgIcon-root {
+    font-size: 30px !important;
+    font-weight: 600;
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px white;
+}
+.staffHomeWrapper .staffButtonContainer .staffButton p{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.staffHomeWrapper .bloodInfo{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px ;
+    background-image: url(https://st2.depositphotos.com/3008028/5542/i/950/depositphotos_55426393-stock-photo-light-grey-background.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid gray;
+}
+.staffHomeWrapper .bloodInfo .infoCard{
+    width: 20vw;
+    height: 100px;
+    padding: 10px;
+    background-color: #107ecb;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+    z-index: 5;
+}
+.staffHomeWrapper .bloodInfo .infoCard:nth-child(2){
+    background-color: #216711;
+}
+.staffHomeWrapper .bloodInfo .infoCard:nth-child(3)
+{
+    background-color:#F12711;
+}
+.staffHomeWrapper .bloodInfo .infoCard:nth-child(4)
+{
+    background-color: #4738c0;
+
+}
+.staffHomeWrapper .bloodInfo .infoCard p{
+    padding-top:10px ;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.5s linear;
+}
+.staffHomeWrapper .bloodInfo .infoCard h3{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+@media only screen and (max-width:650px){
+    .staffHomeWrapper .bloodInfo{
+        flex-direction: column;
+    }
+    .staffHomeWrapper .bloodInfo .infoCard{
+        width: 60vw;
+    }   
+}

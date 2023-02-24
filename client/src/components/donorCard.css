@@ -1,0 +1,66 @@
+.donorCardcontainer{
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 5px gray;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
+    margin-bottom:10px;
+    min-width: 250px;
+}
+.cardTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
+.cardTop h4{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.cardMiddle{
+    display: flex;    
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.cardMiddle p{
+    padding: 5px 20px;
+    background-color: crimson;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+.cardMiddle p:nth-child(2){
+    background-color: cadetblue;
+}
+.cardBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.donorCardcontainer .view{
+    padding:10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.status.registered{
+    background-color: #96c7e3;
+    color: #08659c;
+    
+}
+.status.sucess{
+    background-color: #a2f5b2;
+    color: #04914b;
+}
+.status.rejected{
+    color: #e02007;
+    background-color: #f2b4b3;
+}

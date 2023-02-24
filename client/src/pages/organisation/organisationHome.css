@@ -1,0 +1,63 @@
+.organisationHomeContainer{
+    min-height:100vh;
+    
+}
+.organisationHomeWrapper{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.organisationButtonWrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.organisationButtonWrapper .organisationButton{
+    padding: 20px 10px;
+    min-width: 20vw;
+    max-width: 100px;
+    margin: 10px;
+    text-align: center;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    background-color: coral;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid gray;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.organisationButtonWrapper .organisationButton:nth-child(2){
+    background-color: #ff6054;
+}
+.organisationButtonWrapper .organisationButton:nth-child(3){
+    background-color: #27b1e3;
+}
+.organisationButtonWrapper .organisationButton .MuiSvgIcon-root{
+    font-size: 30px !important;
+    font-weight: 600;
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px white;
+}
+.organisationButtonWrapper .organisationButton p{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+@media only screen and (max-width:760px){
+    .organisationHomeContainer .staffHomeWrapper .bloodInfo{
+        flex-direction: column;
+    }
+    .organisationHomeContainer .staffHomeWrapper .bloodInfo .infoCard{
+        width: 60vw;
+    }   
+}

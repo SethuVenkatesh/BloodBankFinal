@@ -1,0 +1,40 @@
+.requestCardContainer{
+    padding: 10px;
+    background-color: whitesmoke;
+    display: grid;
+    box-shadow: 0px 0px 5px gray;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.requestCardContainer span{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+.requestCardContainer button{
+    padding: 5px 10px;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+
+}
+.requestCardContainer .bloodChips{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.requestCardContainer .bloodChips span{
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+    color: white;
+    background-color: cadetblue;
+}

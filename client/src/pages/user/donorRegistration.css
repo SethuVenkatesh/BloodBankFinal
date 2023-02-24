@@ -1,0 +1,143 @@
+.donorContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+.donorForm{
+    margin-top: 20px;
+    max-width: 500px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+.donorForm::before{
+    content: "Donor Registration";
+    top:-10%;
+    font-size: 28px;
+    text-shadow: 2px 2px gray;
+    -webkit-text-stroke: 1px red;
+    -webkit-text-fill-color: white;
+}
+.donorForm .textContainer{
+    width: 100%;
+    border: 1px solid gray;
+    position: relative;
+    border-radius:5px;
+
+}
+.donorForm .textContainer input{
+    border:none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    z-index:10;
+    border-radius:5px;
+}
+.donorForm .textContainer label{
+    position: absolute;
+    top:10px;
+    left:10px;
+    transition:all 0.2s ease;
+    background-color: whitesmoke;
+    padding: 0 2px;
+    pointer-events: none;
+    font-size: 14px;
+}
+.donorForm .textContainer input:focus + label{
+    top:-10px;
+    left:-7px;
+    transform: scale(0.8);
+}
+.donorForm input:-webkit-autofill,
+.donorForm input:-webkit-autofill:hover, 
+.donorForm input:-webkit-autofill:focus, 
+.donorForm input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px whitesmoke inset !important;
+}
+.donorForm .textContainer input:valid + label{
+    top:-10px;
+    left:-7px;
+    transform: scale(0.8);
+}
+.donorForm .textContainer input:-webkit-autofill:is(:hover,:focus){
+    outline: none;
+}
+.donorForm .categoryContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+}
+.donorForm .categoryContainer .radioContainer{
+    display: flex;
+    gap: 10px;
+}
+.donorForm .categoryContainer .selectContainer{
+    padding:0 10px;
+}
+.donorForm .categoryContainer .selectContainer select{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.donorForm .dateContainer{
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.donorForm .dateContainer input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.donorForm button{
+    width: 50%;
+    border:none;
+    color:white;
+    background-color: blue;
+    padding:10px;
+    border-radius: 5px;
+    cursor:pointer;
+
+}
+.donorForm #genderLabel{
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#checkbox-1:checked + label{
+    background-color: blue;
+    color: white; 
+}
+#checkbox-2:checked + label{
+    background-color: blue;
+    color: white; 
+}
+@media only screen and (max-width:767px){
+    .donorForm{
+        max-width: 100%;
+    }
+    .categoryContainer {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

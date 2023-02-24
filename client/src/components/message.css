@@ -1,0 +1,13 @@
+.message-container{
+    z-index:10;
+    padding: 20px;
+    position: fixed;
+    border-radius: 10px;
+    top:15px;
+    left: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: all 1s linear;
+    transform: translate(-50%,0px);
+}

@@ -1,0 +1,30 @@
+.homeContainer{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+.homeWrapper{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.homeWrapper button{
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: lightgray;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: -5px -5px 15px rgba(255,255,255,.1),5px 5px 15px rgba(0,0,0,0.35),inset -5px -5px 15px rgba(255,255,255,.1),inset 5px 5px 15px rgba(0,0,0,0.35);
+}
+.homeWrapper button:hover{
+    transform: scale(1.2);
+}
+.disp-none{
+    display: none !important;
+}

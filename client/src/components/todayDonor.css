@@ -1,0 +1,236 @@
+.todayDonorContainer{
+    padding: 15px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    width: 95%;
+    border-radius: 10px;
+    margin: auto;
+    gap: 10px;
+    box-shadow: 5px 5px 10px 1px gray;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width:755px){
+    .todayDonorContainer{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .todayDonorContainer .left{
+        flex-direction: row !important;
+    }
+    .todayDonorContainer .middle{
+        font-size: 12px;
+    }
+    .todayDonorContainer .right button{
+        width: 100% !important;
+    }
+    .todayDonorContainer .right{
+        padding: 0 !important;
+    }
+}
+.todayDonorContainer .left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+.todayDonorContainer .left p{
+    font-size: 16px;
+    color: gray;
+    letter-spacing: 1px;
+}
+.todayDonorContainer .left strong{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+.todayDonorContainer .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todayDonorContainer .middle p{
+    background-color:#e65b43;
+    color: white;
+    padding:10px 10px;
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-shadow: 0 0 5px 2px gray;
+}
+.todayDonorContainer .middle p:nth-child(3){
+    background-color: crimson;
+    width: 35% ;
+}
+.todayDonorContainer .middle span{
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    color: white;
+    width: 25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    box-shadow: 0 0 5px 2px gray;
+}
+.todayDonorContainer .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+}
+.todayDonorContainer .right button{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: gray;
+    border-radius: 10px;
+    cursor: pointer;
+    color:white;
+    text-align: center;
+}
+.modelContainer{
+    height: 70vh;
+    width: 45vw;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:10;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray,-2px -2px 10px gray;
+}
+@media only screen and (max-width:840px){
+    .modelContainer{
+        width: 60vw;
+    }
+}
+@media only screen and (max-width:625px){
+    .modelContainer{
+        width: 70vw;
+    }
+}
+@media only screen and (max-width:540px){
+    .modelContainer{
+        width: 95vw;
+    }
+}
+.modelTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: .1px solid gray;
+    height: 10%;
+
+}
+.modelTitle svg{
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    right: 0;
+}
+.modelBody{
+    padding: 20px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.modelBody div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.modelFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.modelFooter .buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.modelFooter button{
+    border:none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modelContainer .accept{
+    background-color: #78de85;
+    color:#33803d;
+}
+.modelContainer .reject{
+    background-color: #f59178;
+    color: #eb3e13;
+}
+.modelContainer .rejectCheckboxContainer{
+    width: 90%;
+    background-color: aliceblue;
+    padding: 10px;
+    z-index: 2;
+    position: absolute;
+    top:90%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray,-2px -2px 10px gray;
+}
+.modelContainer .rejectCheckboxContainer::before{
+    position: absolute;
+    content: "";
+    top:-6%;
+    left: 65%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid aliceblue;
+}
+.modelContainer .rejectCheckboxContainer button{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  color: whitesmoke;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.rejectCheckboxContainer .back{
+    background-color: blue;
+    left: 20px;
+}
+.rejectCheckboxContainer .submit{
+    background-color: #33803d;
+    right: 20px;
+    float: inline-end;
+}
+
+.rejectCheckboxContainer .popupButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.rejectCheckboxWrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    width: 100%;
+    place-items: center;
+    padding: 20px;
+}
+.rejectCheckboxWrapper div{
+    margin-right: auto;
+}
+.rejectCheckboxWrapper div label{
+    margin-left: 5px;
+}

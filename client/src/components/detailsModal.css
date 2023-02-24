@@ -1,0 +1,76 @@
+.modalBackground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.detailsModal{
+    background-color:white;
+    padding: 20px;
+    position:absolute;
+    z-index: 10;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 50vh;
+    min-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+.detailsModal .modalHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+   
+}
+.detailsModal .modalHeader h4{
+    color: cadetblue;
+    font-size: 20px;
+}
+.detailsModal .modalHeader .closeIcon{
+    float: right;
+    position: absolute;
+    right: 10%;
+}
+.detailsModal .modalContent{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.detailsModal .modalContent .details{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    color: gray;
+    gap: 20px;
+}
+.detailsModal .modalContent .rejectReasons h5{
+    font-size: 18px;
+    color: red;
+    float: none;
+}
+.detailsModal .modalContent .details h5{
+    font-size: 18px;
+}
+.detailsModal .modalContent .details .reasons{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.detailsModal .modalContent .details p{
+    font-size: 16px;
+}
+
+@media only screen and (max-width:650px){
+    .detailsModal{
+        width: 100vw;
+    }
+}

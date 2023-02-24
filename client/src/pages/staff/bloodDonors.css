@@ -1,0 +1,75 @@
+.bloodDonorsContainer{
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.bloodDonorsWrapper{
+    padding: 10px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.bloodDonorsWrapper .tabContainer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.bloodDonorsWrapper .tabContainer .tab{
+    display: inline;
+    padding: 10px 20px 20px 20px ;
+    margin: 10px;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid  lightgray;
+    border-bottom: none;
+}
+.bloodDonorsWrapper .tabContent-1{
+    
+}
+.bloodDonorsWrapper .tabContainer .tab:hover{
+    color: blue;
+}
+.bloodDonorsWrapper .tabContainer .tab.active{
+    color: white;
+    border: none;    
+    background-color: cornflowerblue;
+}
+.tabContentContainer{
+    height: 70vh;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+}
+.tabContent-1 .alert{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    color: red;
+
+}
+.tabContentContainer::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.tabContentContainer::-webkit-scrollbar-thumb {
+    outline: 1px solid slategrey;
+}
+.tabContentContainer::-webkit-scrollbar {
+    width: 10px;
+}
+@media only screen and (max-width:500px)
+{
+    .bloodDonorsWrapper .tabContainer .tab{
+        padding: 5px 10px 10px 10px;
+    }
+    .bloodDonorsWrapper .tabContainer{
+        padding: 10px;
+    }
+}
